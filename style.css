@@ -1,0 +1,260 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.heading {
+    width: 60%;
+    height: 10%;
+    position: relative;
+    top: 100px;
+    left: 50px;
+    margin: auto;
+}
+
+.mainHeading {
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+}
+
+#task {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+#list {
+    font-size: 3.5rem;
+    opacity: 0.5;
+    font-weight: 100;
+    margin-left: 10px;
+}
+.subHeading {
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    margin-top: 10px;
+}
+
+.fa {
+    color: red;
+    
+}
+
+#addList {
+    font-size: 2rem;
+    opacity: 0.5;
+    /* padding-bottom: 1    0px; */
+    margin-bottom: 10px;
+
+}
+
+.cards {
+    display: flex;
+    /* justify-content: start; */
+    width: 60%;
+    /* border: 1px solid red; */
+    /* align-items: start; */
+    flex-wrap: wrap;
+    /* margin-left: 20%;
+    margin-right: 20%; */
+        position: relative;
+        top: 200px;
+       padding: 2%;
+    margin: auto;
+
+
+}
+.card1 {
+    margin-left: 20px;
+    margin-top: 10px;
+    height: 45vh;
+    width: 30%;
+    position: relative;
+    border: 0.2em solid red;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px grey;
+}
+
+.paris {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color: red;
+    font-size: 1.7rem;
+    /* margin-left: 10px; */
+    border-bottom: 1px solid black;
+    height: 18%;
+    text-align: left;
+    width: 85%;
+    margin-top: 20px;
+}
+
+.completedTask{
+    position: absolute;
+    top: 35%;
+    right: 0px;
+    font-size: 1.4rem;
+    text-decoration: line-through 2px;
+    color: red;
+    /* padding-left: 10px; */
+    height: 10%;
+    width: 85%;
+    text-align: left;
+}
+
+#check {
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+    margin-right: 5px;
+}
+.pendingTask {
+    width: 90%;
+    height: 10%;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+  font-size: 1.3rem;
+  height: 30%;
+}
+
+.button {
+    width: 200px;
+    height: 50px;
+    margin-right: 80px;
+    border: 0px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.blur {
+    filter: blur(6px);
+    
+}
+
+.popup
+{
+  display: flex;
+  justify-content:space-around;
+  flex-direction: column;
+  margin: auto;
+  border: 2px solid red;
+  width: 400px;
+  align-items: center;
+  height: 200px;
+  margin-bottom: 500px;
+  border-radius: 5px;
+}
+.popup-task {
+ color: red;
+ font-size: 1.5rem;
+ margin: auto;
+}
+
+.popup-textarea {
+    border: 1.5px solid red;
+    border-radius: 5px;
+}
+
+.popup-button {
+    width: 80px;
+    height: 40px;
+    background: red;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.3rem;
+    margin: 10px;
+    border-radius: 25px;
+}
+
+@media screen and (min-width:300px ) and (max-width:500px) {
+    .heading {
+        width: 100%;
+        top: 20px;
+    }
+
+    #task {
+        font-size: 2.5rem;
+    }
+
+    #list {
+        font-size: 2.5rem;
+    }
+
+    .subHeading {
+        width: 10%;
+        margin-top: 0px;
+    }
+
+    #addList {
+        /* font-size: 2rem; */
+        /* opacity: 0.5; */
+        /* padding-bottom: 1    0px; */
+        /* margin-bottom: 10px; */
+        display: none;
+    
+    }
+
+    .cards {
+        /* display: flex; */
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        height: 7%;
+        margin-left: 0px;
+        top: 0px;
+    }
+
+    .card1 {
+        /* margin: auto; */
+        /* margin-top: 10px; */
+        height: 6vh;
+        width: 90%;
+        /* position: relative;
+        top: 200px;
+        border: 0.2em solid red;
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px grey; */
+        top: 120px;
+        border-color: gray;
+        margin-top: 30px;
+        margin-right: 15px;
+    }
+    .completedTask {
+        display: none;
+    }
+
+    .pendingTask {
+        display: none;
+    }
+
+    .paris {
+        border: none;
+        margin-top: 8px;
+        color: grey;
+    }
+
+    .popup {
+        width: 80%;
+    }
+    .popup-task {
+        font-size: 1.5rem;
+    }
+
+    .popup-textarea {
+        width: 80%;
+    }
+
+    .popup-button {
+        width: 60px;
+        height: 30px;
+    }
+
+}
